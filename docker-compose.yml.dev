@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  strapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: development
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "1337:1337"
+    volumes:
+      - .:/opt/app
+    command: ["npm", "run", "develop"]
