@@ -6,12 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        NODE_ENV: development
+        NODE_ENV: production
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
     ports:
       - "1337:1337"
     volumes:
       - .:/opt/app
-    command: ["npm", "run", "develop"]
+    command: ["npm", "run", "start"]
     restart: unless-stopped
