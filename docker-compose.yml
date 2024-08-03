@@ -14,3 +14,4 @@ services:
     volumes:
       - .:/opt/app
     command: ["npm", "run", "start"]
+    restart: unless-stopped
