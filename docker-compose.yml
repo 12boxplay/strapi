@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  Strapi:
+  strapi-app:
     build:
       context: .
       dockerfile: Dockerfile
