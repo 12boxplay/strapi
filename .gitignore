@@ -107,7 +107,7 @@ coverage
 
 license.txt
 exports
-.strapi
+.strapi/client
 dist
 build
 .strapi-updater.json
